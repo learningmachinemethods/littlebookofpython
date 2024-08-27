@@ -1,0 +1,132 @@
+% -*- mode: latex; mode: reftex; mode: auto-fill; mode: flyspell; coding: utf-8; tex-command: "pdflatex.sh" -*-
+
+\documentclass[oneside,11pt]{memoir}
+
+\input{layout.tex}
+
+\usepackage{lipsum} 
+
+\hypersetup{
+  pdfauthor={Noor Chauhan},
+  pdftitle={The Little Book of Python},
+  pdfsubject={Python},
+  pdfkeywords={Python},
+  pdfproducer={LaTeX and TikZ},
+  pdfcreator={pdflatex},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+
+\vspace*{\stretch{1}}
+
+{\huge The Little Book\\[0.75ex] of\\[1.75ex] Python}
+\vspace*{4ex}
+
+
+\vspace*{\stretch{1}}
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace*{\stretch{1.25}}
+
+This ebook is formatted to fit on a phone screen.
+
+\vspace*{\stretch{1}}
+
+\begin{flushright}
+\footnotesize beta-\dotdate\today
+\end{flushright}
+
+\vspace*{-3ex}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{
+\everymath{\color{black}}
+\tableofcontents* % Prints the table of contents
+%\addcontentsline{toc}{chapter}{Contents}
+}
+
+\clearpage
+
+\listoffigures*
+\addcontentsline{toc}{chapter}{List of figures}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
+This book is inspired by The Little Book of Deep Learning by prof. Francois Fleuret \cite{} and aims to develop a guide on python with the focus on machine learning and deep learning fundamental techniques with PyTorch or python in general. This book is currently a collective effort, open-source and welcomes contribution from authors and programmers.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{History}
+
+
+%% This first part provides a minimal background about machine
+%% learning, issues and techniques for efficient computation, and the
+%% strategies to train a parametric model.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+Guido van Rossum born 31 January 1956 is a Dutch programmer and the creator of the Python programming language. Python programming language is comparatively underrated as it supports programming paradigms such as structured, object-oriented and functional. It has support from multiple organizations writing and maintaining the collectively large standard and user function libraries.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Deep learning fundamentals}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{test}
+
+%% If there is an index, it should follow the bibliography (see the
+%% Manual, 14.62). Bibliography entries are listed in one alphabetical
+%% sequence arranged by the surname of the first author or by title if
+%% there is no author.25 Nov 2022
+%%
+%% Bibliography - Chicago Citation Style, 17th Edition - Library
+
+\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\vspace*{\stretch{1}}
+
+\ifdefined\draft
+\begin{center}
+  {\color{red} (draft, do not circulate)}
+\end{center}
+\else
+This book is licensed under the
+\href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative
+  Commons BY-NC-SA 4.0 International License.}
+\fi
+
+Template by \href{https://fleuret.org/francois/}{François Fleuret}.
+
+\vspace*{\stretch{1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\checknbdrafts
+
+\end{document}
